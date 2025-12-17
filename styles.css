@@ -1,0 +1,500 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/backgroundImage.png);
+  background-size: contains;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*min-height: 100vh;*/
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #fcdeda;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stroke {
+  text-decoration: line-through;
+}
+
+.inputCon {
+  display: inline;
+  background-color: #181a19;
+  padding: 5px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 80%;
+}
+
+input {
+  background-color: #181a19;
+  color: #8d8e92;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #181a19;
+  outline: none;
+  font-size: 15px;
+}
+
+.nameInput {
+  width: 61%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.addBtn {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border: 0px;
+  background-color: #f7e2df;
+  color: #181a19;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+.dateSec {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 13px;
+  color: #ad9a8d;
+}
+
+.todoSecs {
+  display: grid;
+  grid-template-columns: 55% 17% 6% 6% 6% 6%;
+  width: 100%;
+  column-gap: 3px;
+  margin-bottom: 10px;
+  background-color: #232e32;
+  border-radius: 13px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  align-items: center;
+}
+
+.todoBtns {
+  background-color: transparent;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.blockart, .blockart1 {
+  color: #8b8789;
+  font-size: 15px;
+}
+
+.doneSecs {
+  display: grid;
+  grid-template-columns: 63% 20% 7% 7%;
+  width: 87%;
+  column-gap: 3px;
+  margin-bottom: 10px;
+  background-color: #232e32;
+  border-radius: 13px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  align-items: center;
+}
+
+.editSecs {
+  display: grid;
+  grid-template-columns: 61% 27% 11%;
+  width: 89%;
+  column-gap: 3px;
+  margin-bottom: 12px;
+  background-color: #181a19;
+  border-radius: 13px;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  align-items: center;
+}
+
+.doneBtn {
+  padding-top: 5px;
+  padding-bottom: 6px;
+  border: 0px;
+  background-color: #919095;
+  color: #181a19;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+}
+
+/*  Sets images to be responsive */
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  column-gap: 10px;
+  margin-top: 50px;
+  padding-bottom: 25px;
+  padding-top: 0px;
+}
+
+footer>div>h4 {
+  color: #f7e2df;
+}
+
+.social_media figure {
+  margin: 0px;
+}
+
+footer>div>p {
+  color: white;
+}
+
+.contact_details>form>textarea
+{
+  background-color: transparent;
+  width: 230px;
+  padding-left: 5px;
+  padding-top: 7px;
+  border: solid 1px white;
+  color: white;
+  height: 25px;
+}
+
+footer a:link, footer a:visited, footer a:hover {
+  color: #f7e2df;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.contact_submit {
+  background-color: #f7e2df;
+  color: black;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.contact_submit:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.social_media>p {
+  font-size: 11px;
+  font-family: sans-serif;
+}
+
+.author {
+  font-family: sans-serif;
+  margin-top: 25px;
+  text-indent: 35%;
+}
+
+/* Select the input element with a placeholder */
+textarea::placeholder {
+  color: white; /* Set the desired color */
+  /* Vendor prefixes for better cross-browser compatibility */
+  color: white; /* Set the desired color */
+  -webkit-text-fill-color: white;
+}
+
+@media screen and (max-width: 801px) {
+  /* CSS rules for screens with a maximum width of 600px */
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+
+@media screen and (max-width: 701px) {
+  /* CSS rules for screens with a maximum width of 600px */
+  .container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  h3 {
+    font-size: 37px;
+  }
+
+}
+
+@media screen and (max-width: 601px) {
+  /* CSS rules for screens with a maximum width of 600px */
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  h3 {
+    font-size: 31px;
+  }
+
+  .nameInput {
+    width: 51%;
+  }
+
+  .todoSecs {
+    width: 95%;
+  }
+
+  .doneSecs {
+    width: 83%;
+  }
+
+.contact_details>form>textarea
+{
+  width: 200px;
+}
+
+}
+
+@media screen and (max-width: 545px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 47%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 52% 20% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 60% 23% 7% 7%;
+  }
+
+  .contact_details>form>textarea
+  {
+    width: 190px;
+  }
+
+  .editSecs {
+    grid-template-columns: 59% 29% 11%;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 45%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 51% 20% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 59% 23% 7% 7%;
+  }
+
+  .contact_details>form>textarea
+  {
+    width: 210px;
+  }
+
+  footer {
+    grid-template-columns: 100%;
+    width: 50%;
+    margin-left: 22%;
+    row-gap: 25px;
+  }
+
+  .social_media>p {
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
+  .editSecs {
+    grid-template-columns: 57% 31% 11%;
+  }
+
+}
+
+@media screen and (max-width: 465px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 40%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 48% 22% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 56% 25% 7% 7%;
+  }
+
+  footer>div>h4 {
+    font-size: 15px;
+  }
+
+  .editSecs {
+    grid-template-columns: 56% 32% 11%;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 35%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 45% 24% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 50% 30% 7% 7%;
+  }
+
+  footer {
+    margin-left: 20%;
+  }
+
+  .editSecs {
+    grid-template-columns: 54% 34% 11%;
+  }
+
+}
+
+@media screen and (max-width: 396px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 30%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 45% 24% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 51% 28% 7% 7%;
+  }
+
+  footer {
+    margin-left: 18%;
+  }
+
+  .editSecs {
+    grid-template-columns: 50% 38% 11%;
+  }
+
+}
+
+@media screen and (max-width: 351px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 25%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 43% 24% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 49% 28% 7% 7%;
+  }
+
+  footer {
+    margin-left: 16%;
+  }
+
+  .author {
+    text-indent: 30%;
+  }
+
+  .editSecs {
+    grid-template-columns: 48% 40% 11%;
+  }
+
+}
+
+@media screen and (max-width: 301px) {
+  /* CSS rules for screens with a maximum width of 600px */
+
+  .nameInput {
+    width: 20%;
+  }
+
+  .todoSecs {
+    width: 95%;
+    grid-template-columns: 43% 24% 6% 6% 6% 6%;
+  }
+
+  .doneSecs {
+    width: 83%;
+    grid-template-columns: 49% 28% 7% 7%;
+  }
+
+  footer {
+    margin-left: 16%;
+  }
+
+  .author {
+    text-indent: 25%;
+  }
+
+  .editSecs {
+    grid-template-columns: 45% 39% 11%;
+  }
+
+}

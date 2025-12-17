@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Free Todo Organiser"/>
+  <meta name="keywords" content="todo, todo organiser, scheduler"/>
+  <meta name="author" content="Louis Optimism"/>
+  <meta name="robots" content="no-follow"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverb Todo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h3>Reverb Todo List Organiser</h3>
+    <section class="inputCon">
+      <input type="text" placeholder="Todo name" class="JS_todoName nameInput" maxlength="200" onkeyup="addTodoEnterKey(event);">
+      <input type="date" class="JS_todoDate dateInput" min="2023-06-07" onkeyup="addTodoEnterKey(event);">
+    </section>
+    <button onclick="addTodo();" class="addBtn">Add Todo</button>
+    <p class="JS_errorDialog error"></p>
+
+    <section class="JS_dateTime dateSec">Date and time</section>
+
+    <div class="JS_todoList todoDivs"></div>
+
+    <div class="JS_doneList todoDivs"></div>
+
+    <footer>
+
+      <div class="contact_details">
+        <h4>Reverb Todo Organiser</h4>
+        <br/>
+        <p>Contact us</p>
+        <form action="mailto:louis.optimism@salford.ac.uk" enctype="text/plain" method="post">
+            <textarea name="email" id="email" cols="40" rows="2" placeholder="YOUR NAME"></textarea>
+            <br/>
+            <br/>
+            <textarea name="name" id="name" cols="40" rows="2" placeholder="YOUR EMAIL ADDRESS"></textarea>
+            <br/>
+            <br/>
+            <textarea name="comment" id="comment" cols="40" rows="2" placeholder="YOUR COMMENT / MESSAGE"></textarea>
+            <br/>
+            <input type="submit" name="submit" value="Submit" class="contact_submit"/>
+        </form>
+      </div>
+
+      <div class="social_media">
+        <h4>Follow us</h4>
+        <figure>
+            <img src="images/Social_media_logos.png" alt="Social media" width="200" height="100" class="responsive">
+        </figure>
+        <br/>
+        <p>COPYRIGHT 2022 Reverb Todo Organiser</p>
+        <P class="author">Site by <a href="mailto:louis.optimism@salford.ac.uk">
+            Louis Optimism</a>
+        </P>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="todoList.js"></script>
+  
+</body>
+</html>

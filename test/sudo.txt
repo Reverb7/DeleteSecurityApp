@@ -6,3 +6,6 @@ sudo systemctl reload nginx
 sudo rm /etc/nginx/sites-enabled/my-site
 ls /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/reverb-todo /etc/nginx/sites-enabled/
+
+
+ssh -i ~/.ssh/gitlab-deploy ubuntu@EC2_PUBLIC_IP

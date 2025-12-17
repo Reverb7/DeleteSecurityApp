@@ -1,3 +1,8 @@
 sudo ln -s /etc/nginx/sites-available/reverb-todo /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
+
+
+sudo rm /etc/nginx/sites-enabled/my-site
+ls /etc/nginx/sites-available/
+sudo ln -s /etc/nginx/sites-available/reverb-todo /etc/nginx/sites-enabled/

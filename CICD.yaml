@@ -1,0 +1,24 @@
+stages:
+  - test
+
+# Include GitLab's built-in security templates
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Security/Secret-Detection.gitlab-ci.yml
+  - template: Security/Dependency-Scanning.gitlab-ci.yml
+
+# Global security policy
+variables:
+  SAST_FAIL_ON_SEVERITY: "Medium"
+  DEPENDENCY_SCANNING_FAIL_ON_SEVERITY: "Medium"
+  SECRET_DETECTION_FAIL_ON_SEVERITY: "Medium"
+
+# Ensure security jobs actually fail the pipeline
+sast:
+  allow_failure: false
+
+dependency_scanning:
+  allow_failure: false
+
+secret_detection:
+  allow_failure: false
